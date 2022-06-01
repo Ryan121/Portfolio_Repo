@@ -1,2 +1,4 @@
 # Portfolio_Repo
-A Django-based portfolio website
+A react.js and django-based portfolio website
+
+Will also be containerised
