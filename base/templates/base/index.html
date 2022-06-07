@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!-- Reference to css file -->
+{% load static %}
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -9,7 +12,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/scss/styles.css">
+        
+        
+        <!-- Chnaged to reflect the 'Django way' of referencing files -->
+        <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
         <title></title>
     </head>
@@ -254,6 +260,31 @@
             </div>
 
             
+        </div>
+
+         <!-- Contact Form -->
+         <!-- https://www.youtube.com/watch?v=r4RQ38EoLds -->
+         <div class="contact_form">
+            <div class="contact_form_container">         
+                <form class="form_style" action="https://formsubmit.co/your@email.com" method="POST">
+                    <div><h2>Contact</h2></div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea type="text" name="" required="required"></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+
         </div>
 
 
