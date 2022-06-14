@@ -1,0 +1,10 @@
+Part #1
+docker build --tag django-portfolio .
+docker run --publish 8000:8000 django-portfolio
+Part #2
+docker-compose build
+docker-compose run (does build as well as run)
+alternative: docker-compose run --rm app
+docker-compose up
+Part #3
+docker exec -it django_container /bin/bash OR docker exec -it django_container bash
