@@ -1,6 +1,0 @@
-env
-env/
-commands.txt
-docker-compose.yml
-Dockerfile
-oldDockerfile.txt
