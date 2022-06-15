@@ -49,3 +49,9 @@ def addProjects(request):
     if serializer.is_valid():
         serializer.save()
     return Response(serializer.data)
+
+
+@api_view(['POST'])
+def deleteProjects(request, pk):
+    project = Project.objects.get(id=pk)
+    return Response(project)
